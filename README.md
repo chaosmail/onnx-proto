@@ -4,6 +4,8 @@ Compiled Onnx Protobuf definition for JavaScript from [github.com/onnx/onnx](htt
 
 ## Changelog
 
+* 3.1.1
+  * Remove unused files
 * 3.1.0
   * Initial release of Onnx IR_VERSION 3
 
