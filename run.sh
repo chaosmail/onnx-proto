@@ -5,7 +5,7 @@ set -e
 
 DIST_DIR=dist
 PROTO_DIR=proto
-PROTO_URL=http://cdn.rawgit.com/onnx/onnx/master/onnx/onnx.proto3
+PROTO_URL=https://github.com/onnx/onnx/raw/master/onnx/onnx.proto3
 
 # Create the directorpies
 mkdir -p $PROTO_DIR
