@@ -1,12 +1,12 @@
 {
   "name": "onnx-proto",
-  "version": "4.0.0",
+  "version": "4.0.4",
   "description": "Onnx Protobuf definition for JavaScript",
   "main": "dist/onnx.js",
   "types": "dist/onnx.d.ts",
   "unpkg": "dist/onnx.min.js",
   "scripts": {
-    "build": "sh run.sh",
+    "build": "sh scripts/run.sh",
     "publish-npm": "npm publish"
   },
   "repository": {
