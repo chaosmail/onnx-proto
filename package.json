@@ -19,7 +19,7 @@
   ],
   "author": "Christoph Koerner",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "protobufjs": "^6.8.8"
   }
 }
