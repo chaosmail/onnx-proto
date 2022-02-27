@@ -1,4 +1,4 @@
-![CI](https://github.com/chaosmail/onnx-proto/workflows/CI/badge.svg)
+[![CI](https://github.com/chaosmail/onnx-proto/actions/workflows/main.yaml/badge.svg)](https://github.com/chaosmail/onnx-proto/actions/workflows/main.yaml)
 
 # Onnx Proto
 
@@ -31,6 +31,11 @@ New versions are automatically released to npm from the master branch.
 
 ## Changelog
 
+* 8.0.0
+  * Replace Travis CI with Github CI
+  * Auto-publish master branch to NPM
+  * Add simple tests to verify package before publishing
+  * Update to latest Onnx definition (v1.10.2) IR_VERSION `8`
 * 4.0.0
   * Add Travis CI/CD
   * Update to latest Onnx definition

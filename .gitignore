@@ -1,3 +1,4 @@
 proto/
 dist/
 node_modules/
+*.tgz

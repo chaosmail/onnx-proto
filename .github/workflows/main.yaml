@@ -18,7 +18,8 @@ jobs:
       # Setup
       - uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org/'
 
       # Dependencies
       - name: Install Node dependencies
@@ -29,12 +30,15 @@ jobs:
         run: npm run build
 
       # Tests
-      - name: Run tests
-        run: npm run test:unit && npm run test:package
+      - name: Run Unit tests
+        run: npm run test:unit
+      - name: Run Package tests 
+        run: npm run test:package
 
       # Publish
       - name: Publish to NPM
         if: github.ref == 'refs/heads/master'
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}i
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
