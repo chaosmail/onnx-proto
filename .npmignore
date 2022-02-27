@@ -1,9 +1,9 @@
-src/
-proto/
-test/
+.github/
+.gitmodules
+onnx/
+tests/
 scripts/
 coverage/
-bower_components/
 node_modules/
-bower.json
-karma.conf.js
+*.config.js
+*.tgz

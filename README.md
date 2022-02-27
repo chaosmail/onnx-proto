@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/chaosmail/onnx-proto.svg?branch=master)](https://travis-ci.org/chaosmail/onnx-proto)
+![CI](https://github.com/chaosmail/onnx-proto/workflows/CI/badge.svg)
 
 # Onnx Proto
 
