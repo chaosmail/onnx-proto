@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Checkout
+      - uses: actions/checkout@v2
+
+      # Setup
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      # Dependencies
+      - name: Install Node dependencies
+        run: npm install
+
+      # Build
+      - name: Build package
+        run: npm run build
+
+      # Tests
+      - name: Run tests
+        run: npm run test:unit && npm run test:package
+
+      # Publish
+      - name: Publish to NPM
+        if: github.ref == 'refs/heads/master'
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}i
