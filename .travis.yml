@@ -1,8 +1,10 @@
 language: node_js
 node_js:
-  - "7"
+  - "16"
 
 script:
+  - npm run test:unit
+  - npm run test:package
   - npm run build
 
 deploy:
