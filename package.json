@@ -11,7 +11,7 @@
   "scripts": {
     "build": "sh scripts/import.sh $npm_package_config_onnx_tag",
     "test:unit": "jest --testPathPattern=tests/unit",
-    "test:package": "npm ci && jest --testPathPattern=tests/package",
+    "test:package": "npm pack && npm install *.tgz --no-save && jest --testPathPattern=tests/package",
     "publish-npm": "npm publish"
   },
   "repository": {
