@@ -6,10 +6,10 @@
   "types": "dist/onnx.d.ts",
   "unpkg": "dist/onnx.min.js",
   "config": {
-    "onnx_tag": "v1.10.2"
+    "onnx_tag": "v1.14.0"
   },
   "scripts": {
-    "build": "sh scripts/import.sh v1.14.0",
+    "build": "sh scripts/import.sh $npm_package_config_onnx_tag",
     "test:unit": "jest --testPathPattern=tests/unit",
     "test:package": "npm pack && npm install *.tgz --no-save && jest --testPathPattern=tests/package",
     "publish-npm": "npm publish"
