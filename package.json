@@ -1,12 +1,12 @@
 {
   "name": "onnx-proto",
-  "version": "8.0.1",
+  "version": "9.0.0",
   "description": "Onnx Protobuf definition for JavaScript",
   "main": "dist/onnx.js",
   "types": "dist/onnx.d.ts",
   "unpkg": "dist/onnx.min.js",
   "config": {
-    "onnx_tag": "v1.10.2"
+    "onnx_tag": "v1.14.0"
   },
   "scripts": {
     "build": "sh scripts/import.sh $npm_package_config_onnx_tag",
@@ -25,11 +25,12 @@
   "author": "Christoph Koerner",
   "license": "MIT",
   "dependencies": {
-    "protobufjs": "^6.11.2"
+    "protobufjs": "^7.2.4"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
+    "protobufjs-cli": "1.1.1",
     "ts-jest": "^27.1.3",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"

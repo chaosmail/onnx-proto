@@ -31,6 +31,9 @@ New versions are automatically released to npm from the master branch.
 
 ## Changelog
 
+* 9.0.0
+  * Upgrade protobufjs to version v7.2.4
+  * Update to latest Onnx definition (v1.14.0) IR_VERSION `9`
 * 8.0.0
   * Replace Travis CI with Github CI
   * Auto-publish master branch to NPM
